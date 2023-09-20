@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Notes.Application.Common.Exceptions
 {
-    public class NoteFoundException : Exception
+    public class NotFoundException : Exception
     {
-        public NoteFoundException(string name, object key)
+        public NotFoundException(string name, object key)
             : base($"Entity \"{name}\"({key} NoteFoundException found.")
         {
 
